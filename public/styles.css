@@ -1,0 +1,99 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    /* border: 1px dashed red; */
+}
+:root{
+    --very-dark-gray-blue:hsl(217, 19%, 35%);
+    --desaturated-dark-blue:hsl(214, 17%, 51%);
+    --grayish-blue:hsl(212, 23%, 69%);
+    --light-gray-blue:hsl(210, 46%, 95%);
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray-blue);
+}
+
+main{
+    min-width: 350px;
+}
+
+.container{
+    margin: 4rem 1rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+/* Using overflow hidden to crop the image */
+.croppd-image{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 2rem;
+}
+.main-image{
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+.body{
+    margin-left: 1.8rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 13px;
+    color: var(--grayish-blue);
+    padding-right: 1.7rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.4rem;
+    margin-left: 1.8rem;
+
+    
+}
+.profile .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 1rem;
+
+}
+.info-container{
+    margin-right: 4rem;
+    
+}
+.profile h2{
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.profile p{
+    margin: 0;
+}
+
+.share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--light-gray-blue);
+    border-radius: 50px;
+}
+.profile .share{
+    width: 1rem;
+}
+
