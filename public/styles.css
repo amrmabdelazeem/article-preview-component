@@ -4,9 +4,9 @@
 }
 :root{
     --very-dark-gray-blue:hsl(217, 19%, 35%);
-    --desaturated-dark-blue:hsl(214, 17%, 51%);
+    --desaturated-dark-blue:#6d7f97;
     --grayish-blue:hsl(212, 23%, 69%);
-    --light-gray-blue:hsl(210, 46%, 95%);
+    --light-gray-blue:#ecf2f8;
 }
 html, body{
     margin: 0;
@@ -58,9 +58,8 @@ p {
 .profile{
     display: flex;
     align-items: center;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.7rem;
     margin-left: 1.8rem;
-
     
 }
 .profile .avatar{
@@ -92,8 +91,91 @@ p {
     height: 2rem;
     background-color: var(--light-gray-blue);
     border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1rem ;
 }
 .profile .share{
     width: 1rem;
+    height: 1rem;
+    background: url("images/icon-share.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+
 }
 
+.share-tab{
+    display: flex;
+    align-items: center;
+    letter-spacing: .2rem;
+    font-size: 13px;
+    background-color: var(--very-dark-gray-blue);
+    padding: .5rem 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -4.5rem;
+    visibility: hidden;
+}
+.share-tab p{
+    padding-left: 1.8rem;
+    font-weight: 500;
+}
+.share-tab img{
+    width: 17px;
+    height: 17px;
+    margin-right: 1rem;
+}
+
+.show{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+@media (min-width:400px){
+    .container{
+        width: 55%;
+        margin: auto;
+        margin-top: 5rem;
+    }    
+    .croppd-image{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        width: 210px;
+        height: 250px;
+        float: left;
+        margin-right: 2rem;
+    }
+    .main-image{
+        overflow: hidden;
+        margin-bottom: 0;
+        width:260px;
+        height: 250px;
+    }
+    .body{
+        margin: 0;
+    }
+    h1{
+        padding-top: 2rem;
+        padding-right: 3rem;
+    }
+    p{
+        font-size: 11px;
+    }
+    .profile p{
+        margin-right: 4rem;
+    }
+    .info-container{
+        margin-top: 1rem;
+    }
+    .profile{
+        padding-bottom: 3.1rem;
+    }
+    .profile .avatar{
+        margin-top: .3rem;
+    }
+}
