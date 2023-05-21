@@ -14,13 +14,18 @@ html, body{
     background-color: var(--light-gray-blue);
 }
 
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
 main{
     min-width: 350px;
 }
 
 .container{
     max-width: 370px;
-    margin: 4rem 1rem;
     border-radius: 20px;
     background-color: #fff;
 }
@@ -144,9 +149,7 @@ p {
 @media (min-width:700px){
     .container{
         max-width: 1440px;
-        width: 50%;
-        margin-left: 22rem;
-        margin-top: 16.2rem;
+        width: 70%;
         padding-right: .9rem;
     }    
     .croppd-image{
