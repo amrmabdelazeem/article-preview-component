@@ -32,7 +32,7 @@ function Profile(){
         <p>28 Jun 2020</p>
     </div>
     <div className="share-container" id="share-container">
-    <button id="click-button" className="share" onClick={handleClick}/>
+    <button id="click-button" className="share" onClick={handleClick} title="share-button"/>
     </div>
     
     </div>

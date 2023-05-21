@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/responsive-article-preview-with-flex-and-reactjs-cfY7yhKz0f)
 - Live Site URL: [Github pages](https://amrmabdelazeem.github.io/article-preview-component)
 
 ## My process
