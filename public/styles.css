@@ -19,13 +19,13 @@ main{
 }
 
 .container{
+    max-width: 370px;
     margin: 4rem 1rem;
     border-radius: 20px;
     background-color: #fff;
 }
 /* Using overflow hidden to crop the image */
 .croppd-image{
-    width: 100%;
     height: 70%;
     overflow: hidden;
     border-top-left-radius: 10px;
@@ -123,8 +123,9 @@ p {
 }
 .share-tab img{
     width: 17px;
-    height: 17px;
+    height: 19px;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .show{
@@ -134,48 +135,91 @@ p {
 .hide{
     visibility: hidden;
 }
-
-@media (min-width:400px){
+.background-change{
+    background-color: var(--desaturated-dark-blue);
+}
+.button-clicked{
+    filter: invert(100%) sepia(4%) saturate(3522%) hue-rotate(322deg) brightness(113%) contrast(101%);
+}
+@media (min-width:700px){
     .container{
-        width: 55%;
-        margin: auto;
-        margin-top: 5rem;
+        max-width: 1440px;
+        width: 50%;
+        margin-left: 22rem;
+        margin-top: 16.2rem;
+        padding-right: .9rem;
     }    
     .croppd-image{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
-        width: 210px;
-        height: 250px;
+        width: 285px;
+        height: 280px;
         float: left;
-        margin-right: 2rem;
+        margin-right: 2.5rem;
     }
     .main-image{
         overflow: hidden;
         margin-bottom: 0;
-        width:260px;
-        height: 250px;
+        width:350px;
+        height: 300px;
     }
     .body{
         margin: 0;
     }
     h1{
+        font-size: 1.3rem;
         padding-top: 2rem;
-        padding-right: 3rem;
+        padding-right: 2.5rem;
     }
     p{
-        font-size: 11px;
+        font-size: 13px;
     }
+    
+    .profile h2{
+        font-size: 14px;
+    }
+
     .profile p{
-        margin-right: 4rem;
+        margin-right: 6.8rem;
+        font-size: 14px;
     }
     .info-container{
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
     .profile{
         padding-bottom: 3.1rem;
     }
     .profile .avatar{
         margin-top: .3rem;
+    }
+    .share-tab{
+        width: 30%;
+        position: relative;
+        bottom: 5.6rem;
+        left: 14rem;
+        padding: .3rem 1.1rem;
+        border-radius: 15px;
+    }
+
+    .share-tab p{
+        padding-left: 1.2rem;
+        letter-spacing: .3rem;
+        padding-right: 1.4rem;
+    }
+    .share-tab img{
+        padding-top: .1rem;
+        padding-right: .1rem;
+    }
+
+
+    .triangle{
+        position: absolute;
+        top: 2.8rem;
+        left: 7.4rem;
+        width: 17px;
+        height: 17px;
+        background-color: var(--very-dark-gray-blue);
+        transform: rotate(45deg);
     }
 }
